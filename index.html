@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تحليل كيميائي وميكانيكي لتحديد نوع الصلب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>🔍 تحليل كيميائي وميكانيكي لتحديد نوع الصلب</h2>
+
+  <label>التخانة (مم):</label>
+  <input type="number" id="thickness">
+
+  <h3>🧪 التحليل الكيميائي:</h3>
+  <label>C ٪:</label><input type="number" step="0.01" id="C">
+  <label>Si ٪:</label><input type="number" step="0.01" id="Si">
+  <label>Mn ٪:</label><input type="number" step="0.01" id="Mn">
+  <label>P ٪:</label><input type="number" step="0.001" id="P">
+  <label>S ٪:</label><input type="number" step="0.001" id="S">
+  <label>N ٪:</label><input type="number" step="0.001" id="N">
+  <label>Cu ٪:</label><input type="number" step="0.01" id="Cu">
+
+  <h3>⚙️ التحليل الميكانيكي:</h3>
+  <label>إجهاد الخضوع Rp0.2 (MPa):</label><input type="number" id="yield">
+  <label>الشد الأقصى Rm (MPa):</label><input type="number" id="tensile">
+  <label>الاستطالة A%:</label><input type="number" id="elongation">
+
+  <button onclick="analyzeSteel()">🔍 تحليل وتحديد النوع</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
